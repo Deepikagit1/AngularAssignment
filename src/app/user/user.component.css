@@ -1,0 +1,48 @@
+
+ #wrapper{
+ margin-top:50px;
+  border: 1px solid black;
+} 
+#content{
+  
+  border: 1px solid black;
+} 
+ #top {
+  list-style-type: none;
+  margin-right: 5px;
+  
+}
+#side{
+list-style-type: none;
+width: 150%;
+padding:20px;
+color:black;
+background-color:white;
+line-height: 3em;
+
+
+}
+#mid{
+  list-style-type: none;
+ 
+}
+
+table{
+  overflow:scroll;
+}
+
+.search-container{
+  margin-left: 50%;
+  margin-right: 10%;
+}
+#lg{
+  margin-left: 15%;
+}
+
+.dgtl{
+  width: 200px;
+  height: 100px;
+}
+
+
+ 

@@ -1,0 +1,38 @@
+<div class="container">
+    <h2>{{header}}</h2>
+
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <div class="form-group">
+            <label for="">Id</label>
+            <!-- <input type="text"class="form-control" ngModel name="id"> -->
+         <input type="number" class="form-control" [ngModel]="us.id" name="id"> 
+        </div>
+        <div class="form-group">
+            <label for="">Name</label>
+            <!-- <input type="text"class="form-control" ngModel name="name"> -->
+            <input type="text" class="form-control" [ngModel]="us.Name" name="name">
+        </div>
+        <div class="form-group">
+            <label for="">Organisation</label>
+            <!-- <input type="text"class="form-control" ngModel name="organisation"> -->
+            <input type="text" class="form-control" [ngModel]="us.Organisation" name="organisation">
+        </div>
+        <div class="form-group">
+            <label for="">Persona</label>
+            <!-- <input type="text"class="form-control" ngModel name="persona"> -->
+            <input type="text" class="form-control" [ngModel]="us.Persona" name="persona">
+        </div>
+        <div class="form-group">
+            <label for="">SystemRole</label>
+            <input type="text" class="form-control" [ngModel]="us.SystemRole" name="systemrole">
+        </div>
+        <div class="form-group">
+            <label for="">Status</label> <br>
+            <input type="radio"   [ngModel]="us.Status" name="status">active
+            <input type="radio"  [ngModel]="us.Status" name="status">inactive
+        </div>
+        <div class="form-group">
+            <button type="submit" [disabled]="!f.valid" class="btn btn-primary">Save</button>
+        </div>
+    </form>
+</div>

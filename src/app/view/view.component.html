@@ -1,0 +1,34 @@
+<div class="container">
+    
+
+    <form (ngSubmit)="onCancel(fm)" #fm="ngForm">
+        <div class="form-group">
+            <label for="">Id</label>
+            <input type="text"class="form-control" ngModel name="id">
+            <!-- <input type="number"class="form-control" [ngModel]="us.id" name="id"> -->
+        </div>
+        <div class="form-group">
+            <label for="">Name</label>
+            <input type="text"class="form-control" ngModel name="name">
+        </div>
+        <div class="form-group">
+            <label for="">Organisation</label>
+            <input type="text"class="form-control" ngModel name="organisation">
+        </div>
+        <div class="form-group">
+            <label for="">Persona</label>
+            <input type="text"class="form-control" ngModel name="persona">
+        </div>
+        <div class="form-group">
+            <label for="">SystemRole</label>
+            <input type="text"class="form-control" ngModel name="systemrole">
+        </div>
+        <div class="form-group">
+            <label for="">Status</label>
+            <input type="radio" ngModel name="status">
+        </div>
+        <div class="form-group">
+            <button type="submit" id="cncl" >close</button>
+        </div>
+    </form>
+</div>
